@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  登录注册找回密码
+//
+//  Created by beijingduanluo on 16/1/5.
+//  Copyright © 2016年 beijingduanluo. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define whitesColor [UIColor whiteColor]
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define Width [UIScreen mainScreen].bounds.size.width/320.0
+#define Height [UIScreen mainScreen].bounds.size.height/568.0
+#import "UILabel+Extension.h"
+#import "UIButton+Extension.h"
+#import "UIImageView+Extension.h"
+#import "LoginVCNew.h"
+#import "RegisterVCNew.h"
+#import "ForgetPassWordVCNew.h"
+#import "AFNetworking.h"
+#import "FormValidator.h"
+#import "SHInvoker.h"
+#import "UITextField+Extension.h"
+#define failTipe @"网络开小差了，稍后试试吧"
+//注册
+#define registAccount @""
+//登陆
+#define loginAccount @""
+//验证码接口
+#define validate @""
+//忘记密码接口
+#define forgetPassW @""
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>安装与隐私</string>
+		<key>name</key>
+		<array>
+			<string>熊猫是通过在手机上建立VPN连接来实现网络加速的，需要安装安全通讯证书；
+熊猫会定期分析网络日志以优化线路，但绝不会向任何无关第三方透露用户隐私</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>无法连接熊猫加速器？ </string>
+		<key>name</key>
+		<array>
+			<string>请确认您的当前网络是否可以正常上网、剩余时间是否大于1天、是否同时使用其他加速器</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>为什么连接后自动断开？ </string>
+		<key>name</key>
+		<array>
+			<string>网络波动、会员到期都会自动断开连接；连接断开后，重启客户端或重新连接即可</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>熊猫加速器的流量是什么？ </string>
+		<key>name</key>
+		<array>
+			<string>熊猫加速器流量是加速时的无限流量，无法代替运营商的数据流量</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>其他问题</string>
+		<key>name</key>
+		<array>
+			<string>请联系QQ客服800133216</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>本软件所有活动与功能与苹果公司无关</string>
+		<key>name</key>
+		<array>
+			<string>本软件所有活动与功能与苹果公司无关</string>
+		</array>
+	</dict>
+</array>
+</plist>

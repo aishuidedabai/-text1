@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Login And Rigist View Controller-->
+        <scene sceneID="5pp-6z-cy7">
+            <objects>
+                <viewController storyboardIdentifier="LoginAndRigistViewController" id="ZbE-Fc-sf3" customClass="LoginAndRigistViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Apc-53-Z2X"/>
+                        <viewControllerLayoutGuide type="bottom" id="3qY-7v-Hep"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0VC-rU-8A7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7p-7j-aA3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.5568627451" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.1019607843" green="0.5568627451" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZD-JS-mwl">
+                                <rect key="frame" x="10" y="100" width="300" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl-login" translatesAutoresizingMaskIntoConstraints="NO" id="YWw-lT-ay0">
+                                        <rect key="frame" x="40" y="1" width="220" height="110"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl-login-arm-left" translatesAutoresizingMaskIntoConstraints="NO" id="mas-Y6-0op">
+                                        <rect key="frame" x="45" y="101" width="40" height="66"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl-login-arm-right" translatesAutoresizingMaskIntoConstraints="NO" id="Azu-E7-YfB">
+                                        <rect key="frame" x="218" y="101" width="40" height="66"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MyX-0S-6WY">
+                                        <rect key="frame" x="6" y="102" width="288" height="190"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ND9-Db-em2">
+                                                <rect key="frame" x="28" y="25" width="232" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="ZbE-Fc-sf3" id="K5O-3B-7p1"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxA-uz-mgF">
+                                                <rect key="frame" x="0.0" y="137" width="288" height="53"/>
+                                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3q-uF-GZV">
+                                                <rect key="frame" x="28" y="149" width="112" height="30"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <state key="normal" title="忘记密码？">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C1-nX-IAK">
+                                                <rect key="frame" x="200" y="151" width="60" height="30"/>
+                                                <color key="backgroundColor" red="0.1019607843" green="0.5568627451" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="登录">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MG7-eQ-jrD">
+                                                <rect key="frame" x="28" y="87" width="232" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="ZbE-Fc-sf3" id="3ep-gV-VkC"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_hand" translatesAutoresizingMaskIntoConstraints="NO" id="C9G-x7-A3R">
+                                        <rect key="frame" x="45" y="82" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_hand" translatesAutoresizingMaskIntoConstraints="NO" id="gt9-xT-AHy">
+                                        <rect key="frame" x="218" y="82" width="40" height="40"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="60M-uv-fHT"/>
+                                    <constraint firstAttribute="height" constant="300" id="cUa-jK-pc3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="SZD-JS-mwl" secondAttribute="centerY" constant="34" id="6B4-H4-Bal"/>
+                            <constraint firstItem="G7p-7j-aA3" firstAttribute="top" secondItem="0VC-rU-8A7" secondAttribute="top" id="9Qg-gc-OM6"/>
+                            <constraint firstAttribute="trailing" secondItem="G7p-7j-aA3" secondAttribute="trailing" id="FK7-hk-GCk"/>
+                            <constraint firstItem="G7p-7j-aA3" firstAttribute="leading" secondItem="0VC-rU-8A7" secondAttribute="leading" id="H1t-za-sK5"/>
+                            <constraint firstAttribute="centerX" secondItem="SZD-JS-mwl" secondAttribute="centerX" id="fTV-aT-SrH"/>
+                            <constraint firstItem="G7p-7j-aA3" firstAttribute="height" secondItem="0VC-rU-8A7" secondAttribute="height" multiplier="0.5" id="vmM-Ru-2ji"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="LoginButton" destination="8C1-nX-IAK" id="VUo-CI-feq"/>
+                        <outlet property="PasswordTextField" destination="MG7-eQ-jrD" id="7vL-AF-YZ2"/>
+                        <outlet property="UserNameTextField" destination="ND9-Db-em2" id="X1G-6j-sbN"/>
+                        <outlet property="left_hidden" destination="mas-Y6-0op" id="aby-cB-MGz"/>
+                        <outlet property="left_look" destination="C9G-x7-A3R" id="bIZ-fP-sVU"/>
+                        <outlet property="loginView" destination="MyX-0S-6WY" id="2vX-TB-Lk2"/>
+                        <outlet property="login_view" destination="MyX-0S-6WY" id="Ble-UF-PW1"/>
+                        <outlet property="right_hidden" destination="Azu-E7-YfB" id="kgP-3x-P4T"/>
+                        <outlet property="right_look" destination="gt9-xT-AHy" id="Jue-Ao-gnS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mwp-T8-vFa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="216"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_hand" width="200" height="200"/>
+        <image name="owl-login" width="211" height="108"/>
+        <image name="owl-login-arm-left" width="40" height="65"/>
+        <image name="owl-login-arm-right" width="40" height="65"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_XiongMaoVPNPro {
+  umbrella header "Pods-XiongMaoVPNPro-umbrella.h"
+
+  export *
+  module * { export * }
+}

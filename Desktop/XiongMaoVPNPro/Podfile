@@ -1,0 +1,23 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target 'XiongMaoVPNPro' do
+pod 'AFNetworking'
+pod 'UMengSocialCOM'
+pod 'JPush'
+pod 'SVProgressHUD'
+pod 'SDWebImage'
+pod 'Alert'
+pod 'MJExtension'
+end
+
+target 'XiongMaoVPNProUITests' do
+pod 'AFNetworking'
+pod 'UMengSocialCOM'
+pod 'JPush'
+pod 'SVProgressHUD'
+pod 'SDWebImage'
+pod 'Alert'
+pod 'MJExtension'
+end
